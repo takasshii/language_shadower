@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <title>language_shadower</title>
+  <link rel="stylesheet" href="{% static 'nlp/css/stylesheet.css' %}">
+  <!--<link rel="stylesheet" href="{% static 'nlp/css/responsive.css' %}">-->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet"> 
+  <!--ロゴのフォント-->
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <!--英語のフォント-->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+          <h1 class="logo">なりきり外国人</h1>
+      </div>
+      <!-- スマートフォン用のメニューアイコン -->
+      <!--<span class="fa fa-bars menu-icon"></span>-->
+
+      <div class="header-right">
+        <div class="nav">
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#Chinese">Chinese</a>
+            <a href="#English">English</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--モーダル-->
+  {% if Chinese_list %}
+  <div id="modal01" class="modal js-modal">
+    <div class="modal_bg close-modal"></div>
+    <div class="modal_content">         
+      <p>キーワード: {{Chinese}}</p>
+      <p>{{Chinese}}を中国語に翻訳すると{{trans_zh.text}}になります。</p>   
+      <p>{{trans_zh.text}}をキーワードに中国語の文章を生成しています...</p> 
+      <a class="close-modal" href="">閉じる</a>
+    </div><!--modal__inner-->
+  </div><!--modal-->
+
+  {% elif English_list %}
+  <div id="modal02" class="modal js-modal">
+    <div class="modal_bg close-modal"></div>
+    <div class="modal_content">
+      <p>キーワード: {{ English }}</p>
+      <p>{{English}}を英語に翻訳すると{{trans_en.text}}になります。</p>   
+      <p>{{trans_en.text}}をキーワードに英語の文章を生成しています...</p> 
+      <a class="close-modal" href="">閉じる</a>
+    </div><!--modal__inner-->
+  </div>
+
+  {% else %}
+  <div id="modal03" class="modal js-modal">
+    <div class="modal_bg close-modal"></div>
+    <div class="modal_content">
+      <p>キーワードを入力してください</p>
+      <a class="close-modal" href="">閉じる</a>
+    </div><!--modal__inner-->
+  </div>
+{% endif %}
+  <!--modal-->
+  
+  <div class="top-wrapper">
+    <div class="container">
+      <div class="container_about">
+        <h2 id="about">About</h2>
+        <h3>外国人になりきれる</h3>
+        <p>AIによって生成された文章をシャドーイングすることで、あたかも外国語が喋れるかのように演じることができます。</p>
+        <div class="main_about">
+          <h3>使い方</h3>
+          <ul>
+            <li>キーワードを入力する。</li>
+            <li>AIがキーワードから各言語の文章を生成してくれます。</li>
+            <li>生成された文章が再生されます。<span class="attention">(音量に注意してください)</span></li>
+            <li>耳に当ててシャドーイングをすると外国人になりきることができます！！！</li>
+          </ul>
+        </div>
+        
+        <div class="example"><h3>使用例</h3>
+          <div class="Chinese_about">
+            <h4>中国語</h4>
+            <ul>
+              <li>しつこい勧誘を受けた時、日本語が通じないとはぐらかす事ができます。</li>
+            </ul>
+            </div>
+          <div class="English_about">
+            <h4>英語</h4>
+            <ul>
+              <li>英語ができるという語学マウントをとる事ができます。</li>
+            </ul>
+          </div>
+        </div> 
+      </div> 
+
+      <impg src="" alt="">
+
+      <div class="container_Chinese">
+        <h2 id="Chinese">Chinese</h2>
+        <form action="{% url 'trans' %}" method="POST">
+          <input type="text" name="Chinese" placeholder="キーワードを日本語で入力してください">
+          {% csrf_token %}
+          <div class="btn_wrapper" id="js-openC">
+            <input type="submit" value="生成する" class="button"/>
+          </div>
+        </form>
+        
+        <p>Coming soon...</p>
+        <img src="" alt="">
+      </div>
+
+      <div class="container_English">
+        <h2 id="English">English</h2>
+        <form action="{% url 'trans' %}" method="POST">
+          <input type="text" name="English" placeholder="キーワードを日本語で入力してください">
+          {% csrf_token %}
+          <div class="btn_wrapper" id="js-openE">
+            <input type="submit" value="生成する" class="button"/>
+          </div>
+        </form>
+
+
+        <p>Coming soon...</p>
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!--<p id="copy">Copyright &copy; Takasshii All rights reserved</p>-->
+  </footer>
+
+  <script src="{% static 'nlp/js/script.js' %}"></script>
+</body>

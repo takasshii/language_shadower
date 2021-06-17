@@ -1,0 +1,305 @@
+@import url(sanitize.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(30, 83, 190, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.header-left {
+    float: left;
+}
+
+.logo  {
+    line-height: 65px;
+    font-size: 24px;
+    margin-top: 0px;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.header-right {
+    float: right;
+    margin-right: 0px; /*ここよくわかってない*/
+}
+
+.pager_wrapper {
+    width: 100%;
+    text-align: center;
+}
+.pager{
+    display: inline-block;
+    padding-left: 14px;
+}
+.pager li {
+    padding-left: 14px;
+}
+
+.wrap{
+    display:flex;
+}
+.half {
+    width: 50%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.left {
+    text-align: center;
+    margin: 0;
+
+}
+.nav a {
+    font-family: 'Oswald', sans-serif;
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*モーダル*/
+.modal, .modal_bg, .modal_content {
+    margin: 0;
+    padding: 0;
+}
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.modal_bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal_content{
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+}
+/*モーダルここまで*/
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top-wrapper {
+    padding-top: 45px;/*写真入れるならここいじって*/
+}
+
+.container h2 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #fff;
+    border: #4f80e3 3px solid;
+    color: #4f80e3;
+    font-size: 200%;
+    text-align: center;
+}
+
+.attention {
+    border-bottom: red 1px solid;
+}
+
+h3 {
+    position: relative;
+    padding: 0.5rem;
+    margin: 30px;
+    text-align: center;
+}
+  
+h3:before {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 5px;
+    content: '';
+    border-radius: 3px;
+    background: #FA4141;
+}
+
+input[type=text]{
+    width:100%;
+    font-size: 30px;
+    height:50px;
+    text-align: center;
+}
+
+.cp_ipradio {
+	width: 90%;
+	margin: 2em auto;
+	text-align: center;
+}
+.cp_ipradio input[type='radio'] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_ipradio label {
+	position: relative;
+	display: inline-block;
+	margin-right: 30px;
+	padding-right: 10px;
+	padding-left: 35px;
+	cursor: pointer;
+}
+.cp_ipradio label::before {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 24px;
+	height: 24px;
+	content: ' ';
+	border: 2px solid #da3c41;
+	border-radius: 4px;
+}
+.cp_ipradio input[type='radio'] + label::before {
+	border-radius: 18px;
+}
+.cp_ipradio input[type='radio']:checked + label {
+	padding-left: 10px;
+	color: #ffffff;
+}
+.cp_ipradio input[type='radio']:checked + label::before {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #da3c41;
+}
+/* Transition */
+.cp_ipradio label, .cp_ipradio label::before {
+	-webkit-transition: 0.25s all ease;
+	        transition: 0.25s all ease;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color:#fff;
+    border: 1px solid #767676;
+    padding: 10px 40px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.button:active {
+    box-shadow: none;
+    position: relative;
+    top: 1px;
+}
+
+.btn_wrapper {
+    text-align: center;
+}
+
+
+.container_Chinese, .container_English {
+    text-align: center;
+}
+
+.kakomi-tab2 {
+    position: relative;
+    margin: 3em auto;
+    padding: 1.2em 1em 1em;
+    width: 90%;
+    background-color: #fff; /*BOX背景色 */
+    border: 2px solid #8d93c8; /* 枠線の太さ・色 */
+    box-shadow: 2px 2px 2px #ccc; /* 影の色 */
+}
+.title-tab2 {
+    position: absolute;
+    display: inline-block;
+    top: -28px; /*タブ調整 */
+    left: -2px; /*タブ調整 */
+    padding: 1px 10px;
+    height: 26px;
+    font-weight: bold;
+    color: #fff; /* タイトル色 */
+    background-color: #8d93c8; /* タイトル背景色 */
+    border-radius: 8px 8px 0 0;
+}
+
+
+
+.container_English p {
+    text-align: center;
+}
+
+.sns {
+    text-align: center;
+}
+
+
+
+footer {
+    margin: 0!important;
+    width: 100%;
+    background-color: rgba(30, 83, 190, 0.9);
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0;
+    padding: 10px;
+}
+
+.border {
+    border-bottom: 1px solid #767676;
+}
+
+/*
+
+
+
+li {
+    list-style: none;
+    counter-increment: number;
+}
+なんかうまくいかん
