@@ -150,11 +150,14 @@
         </div>
         
         <div id="result">
-          <audio src="../../static/nlp/result/Chinese.mp3" controls></audio>
+          <!--テスト用ファイル-->
+          <audio src="{% static "../../static/nlp/result/Chinese_test.mp3" %}" controls></audio>
+          <img src="{% static "../../static/nlp/result/test.jpeg" %}" alt="My image"/>
+          <!--本番用ファイル-->
+          <audio src="{% static "../../static/nlp/result/Chinese.mp3" %}" controls></audio>
         </div>
         {% endif %}
 
-        <img src="" alt="">
       </div>
 
       <div class="container_English">
@@ -188,10 +191,16 @@
         </div>
         
         <div id="result">
-          <audio src="../../static/nlp/result/English.mp3" type="audio/mp3" controls></audio>
+          <!--テスト用ファイル-->
+          <audio src="{% static "../../static/nlp/result/Chinese_test.mp3" %}" controls></audio>
+          <img src="{% static "../../static/nlp/result/test.jpeg" %}" alt="My image"/>
+          <!--本番用ファイル-->
+          <audio src="{% static "../../static/nlp/result/English.mp3" %}" controls></audio>
+        
         </div>
+
         {% endif %}
-        <img src="" alt="">
+        
       </div>
 
       <div class="container_English">
