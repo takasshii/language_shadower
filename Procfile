@@ -1,1 +1,1 @@
-web: gunicorn language_shadower.wsgi --log-file -
+web: gunicorn AI_APP.wsgi --log-file -
