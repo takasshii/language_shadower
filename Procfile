@@ -1,1 +1,1 @@
-web: gunicorn evening-ridge-84940.wsgi --log-file -
+web: gunicorn apl_name : app --log-file -
