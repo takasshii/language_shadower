@@ -5,6 +5,7 @@ import pyttsx3
 import jieba
 import ffmpeg
 import markovify
+import os
 
 
 translator = Translator()
@@ -12,24 +13,25 @@ translator = Translator()
 #以下apiの関数宣言
 
 def TextToSpeech_English_man(ph):
+    os.remove('nlp/static/nlp/result/English.mp3')
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
     engine.setProperty("voice", voices[0].id)
     engine.save_to_file(ph, 'nlp/static/nlp/result/result.mp3')
     engine.runAndWait()
-    stream = ffmpeg.input('nlp/static/nlp/result/result.mp3')
-    stream = ffmpeg.output(stream,"nlp/static/nlp/result/English.mp3")
+    stream = ffmpeg.input("nlp/static/nlp/result/result.mp3")
+    stream = ffmpeg.output(stream, "nlp/static/nlp/result/English.mp3")
     ffmpeg.run(stream)
- 
 
 #中国語女性 Mei-jia, age:35, language=['zh_TW']
 def TextToSpeech_pyttsx_Chinese_woman(ph):
+    os.remove("nlp/static/nlp/result/Chinese.mp3")
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
     engine.setProperty("voice", voices[25].id)
     engine.save_to_file(ph, 'nlp/static/nlp/result/result.mp3')
     engine.runAndWait()
-    stream = ffmpeg.input('nlp/static/nlp/result/esult.mp3')
+    stream = ffmpeg.input('nlp/static/nlp/result/result.mp3')
     stream = ffmpeg.output(stream,"nlp/static/nlp/result/Chinese.mp3")
     ffmpeg.run(stream)
  
