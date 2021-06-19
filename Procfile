@@ -1,1 +1,1 @@
-web: gunicorn languageshadower.wsgi --log-file -
+web: gunicorn evening-ridge-84940.wsgi --log-file -
