@@ -3,10 +3,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>language_shadower</title>
   <link rel="stylesheet" href="{% static 'nlp/css/stylesheet.css' %}">
-  <!--<link rel="stylesheet" href="{% static 'nlp/css/responsive.css' %}">-->
+  <link rel="stylesheet" href="{% static 'nlp/css/responsive.css' %}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -81,14 +81,14 @@
           <h2 id="about">About</h2>
               <h3>外国人になりきれる</h3>
               <div class='intro'><p>自動生成された文章をシャドーイングすることで、あたかも外国語が喋れるかのように演じることができます。</p></div>
-
-            
               <h3>使い方</h3>
               <div class='pager_wrapper'>
                 <ol class="pager">
-                  <li>生成したい言語でジャンルを選択してください。文章を生成します。</li>
+                  <li>生成したい言語でジャンルを選択してください。文章と音声を生成します。</li>
                   <li>生成された音声ファイルを再生します。(<span class="attention">再生する前に音量に注意してください</span>)</li>
-                  <li>耳に当ててシャドーイングをすると外国人になりきることができます！！</li>
+                  <li>耳に当ててシャドーイングをすることで外国人になりきることができます！！</li>
+                  <div class='none'><li>（※エラーが出て生成できない場合はもう一度生成してください）</li></div>
+
                 </ol>
               </div>
            
@@ -96,7 +96,7 @@
             <div class="example">
               <h3>使用例</h3>  
               <div class='wrap'>
-                <div class="Chinese_about half">
+                <div class="Chinese_about">
                   <h4 class='left'>中国語</h4>
                   <ul>
                     <li>しつこい勧誘を受けた時、日本語が通じないとはぐらかして勧誘を回避することができます。</li>
@@ -105,7 +105,7 @@
                   </ul>
                 </div>
 
-                <div class="English_about half">
+                <div class="English_about">
                   <h4 class='left'>英語</h4>
                   <ul>
                     <li>英語で電話をしているように見せ、語学マウントをとる事ができます。</li>
@@ -121,6 +121,7 @@
 
       <div class="container_Chinese">
         <h2 id="Chinese">Chinese</h2>
+        <div class="container_Chinese_child">
           <div class='intro'><p>生成したい文章のジャンルを選んでください</p></div>
             <form action="{% url 'home' %}" method="POST">
               <div class="cp_ipradio">
@@ -138,8 +139,9 @@
             </form>
         {% if Chinese_list %}
         <p>選んだジャンル： {{Chinese_list.genre}}</p>
-        <p>{{Chinese_list.genre}}をキーワードに中国語の文章を生成しています...</p> 
-        <p>文章を生成しました</p>
+        <div id="result">
+          <audio src="{% static "../../static/nlp/result/Chinese.mp3" %}" controls></audio>
+        </div>
         <div class="kakomi-tab2">
           <span class="title-tab2">中国語</span>
          {{Chinese_list.result}}
@@ -149,15 +151,14 @@
          {{Chinese_list.trans_ja}}
         </div>
         
-        <div id="result">
-          <audio src="{% static "../../static/nlp/result/Chinese.mp3" %}" controls></audio>
-        </div>
+        
         {% endif %}
-
+      </div>
       </div>
 
       <div class="container_English">
         <h2 id="English">English</h2>
+        <div class="container_English_child">
         <div class='intro'><p>生成したい文章のジャンルを選んでください</p></div>
         <form action="{% url 'home' %}" method="POST">
           <div class="cp_ipradio">
@@ -175,8 +176,9 @@
             </form>
         {% if English_list %}
         <p>選んだジャンル： {{English_list.genre}}</p>
-        <p>{{English_list.genre}}をキーワードに英語の文章を生成しています...</p> 
-        <p>文章を生成しました</p>
+        <div id="result"> 
+          <audio src="{% static "../../static/nlp/result/English.mp3" %}" controls></audio>
+        </div>
         <div class="kakomi-tab2">
           <span class="title-tab2">英語</span>
          {{English_list.result}}
@@ -185,33 +187,33 @@
           <span class="title-tab2">日本語訳</span>
          {{English_list.trans_ja}}
         </div>
-        
-        <div id="result"> 
-          <audio src="{% static "../../static/nlp/result/English.mp3" %}" controls></audio>
-        </div>
 
         {% endif %}
+        </div>
         
       </div>
 
       <div class="container_English">
         <h2 id="Details">Details</h2>
+        <div class="container_English_child">
           <h3>著作権について</h3>
             <p>このサイトでは、<a href= "https://www.voanews.com/" target="_blank" >Voice of America(VOA)</a>のニュース記事を使用しています。</p>
             <p>VOAが作成した文章はパブリックドメインになるため、許可なしに使用することができます。</p>
+          <h3>使用している技術について</h3>
+            <p>中国語の自動生成では、形態素解析エンジンであるjiebaを使い文章を分かち書きした後、マルコフ連鎖を用いて文章生成を行なっています。</p>
+            <p>また、音声合成はテキストの読み上げライブラリであるpyttsx3を使い、ffmpegを用いて利用可能なmp3形式に変換しています。</p>
+            <p>日本語訳に関しては、googletransのライブラリを使用しています。google翻訳の制限に依存するため、表示されない場合もあります。</p>
           <h3>生成される文章について</h3>
-          
-            <p>ニュース記事はランダムに選ばれています。そのため、生成された文章に意味や意図はありません。</p>
+            <p>データとして扱っているニュース記事はランダムに選ばれています。そのため、生成された文章に意味や意図はありません。</p>
             <p>また、バージョンによっては日本語訳が生成されない場合もあります。その際は<a href="https://twitter.com/takashiho_2" class="tw"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i>twitter</a>に連絡いただけると助かります。</p>
           </div>   
           <div class="sns">
             <a href="https://twitter.com/takashiho_2?ref_src=twsrc%5Etfw" class='twitter-timeline' data-height="600px" data-width="40%">Tweets by takashiho_2</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
-          
+        </div>
 
       </div>
     </div>
-  </div>
 
   <footer>
     
@@ -224,8 +226,4 @@
   </footer>
   <script src="{% static 'nlp/js/script.js' %}"></script>
 </body>
-
-
-<!--<div class='twitter-timeline'>
-  
-</div>-->
+</html>
