@@ -1,0 +1,130 @@
+The European Space Agency (ESA) announced Thursday it will collaborate with the U.S. space agency NASA on an unmanned probe to study Venus, the third such mission to the planet announced this month.
+
+In a release, ESA said the probe will be called EnVision, and much like the DAVINCI+ and VERITAS missions announced by NASA earlier in June, its overall mission will be to collect data about Venus’ atmosphere and surface to unlock information about how the planet formed and evolved.
+
+Venus is of particular interest to scientists because it is Earth’s closest neighbor in the solar system and strikingly similar to Earth in size and composition. Yet in its current form, it is inhospitable to life as we know it, with a surface temperature capable of melting lead.
+
+The EnVision probe will contain instruments to answer questions as to how Venus got that way. The spacecraft will include a “sounder” to help reveal what lies below the surface of the planet. Spectrometers on the probe will study both the surface and the atmosphere, monitoring for trace gases that might indicate an active volcano.
+
+NASA will contribute the VenSAR radar system to image and map the surface. The space agency will also be responsible for the project’s overall instrument management.
+
+Scientist from both agencies say there will be some overlap among the missions. The DAVINCI+ probe will also study Venus’ atmosphere, but do so by dropping a secondary probe directly through it.
+
+And like the EnVision probe, VERITAS will study the planet’s surface, but will use high resolution topography and a global location map for Venus that will serve as a reference system for all past and future surface data collected.
+
+The two NASA probes are expected to launch between 2028 and 2030. The earliest launch opportunity for EnVision is 2031. The spacecraft would take around 15 months to reach the planet, with a further 16 months to achieve the desired orbit.
+
+An international team of astronomers Monday announced the discovery of a rare gas molecule — phosphine — in the clouds of Venus, which may be the first solid evidence of extraterrestrial life in the solar system.  
+
+The researchers say on Earth, phosphine is only made industrially or by microbes that thrive in oxygen-free environments. The international team, which includes researchers from Britain, the U.S. and Japan, published their findings in two papers — the science journal Nature on Monday, and Astrobiology journal on Saturday.
+
+Phosphine was first spotted in observations that were made by Cardiff University astronomer Jane Greaves using the James Clerk Maxwell Telescope (JCMT) in Hawaii. The discovery was then confirmed using a more sensitive radio telescope, the Atacama Large Millimeter/submillimeter Array (ALMA) in Chile.  
+
+The team estimates that phosphine exists in Venus’ clouds at a small concentration, only about 20 molecules in every billion. Still, after running several calculations, they determined there were no non-biological sources on the planet that could account for the levels of phosphine they discovered in the atmosphere. 
+
+Astronomers have speculated for decades that high clouds on Venus could offer a home for microbes — floating free of the scorching surface but needing to tolerate very high acidity. They say detection of phosphine could point to such extra-terrestrial “aerial” life. 
+
+Another member of the team, Massachusetts Institute of Technology molecular astrophysicist Clara Sousa Silva, has investigated phosphine as a “biosignature” gas of non-oxygen-using life on planets around other stars. She said finding it on Venus is exciting and extraordinary.  
+
+But she said it raises many questions regarding how any organisms, if they exist, could survive in the planet’s atmosphere, where clouds are made up of about 90% sulphuric acid. So, team members acknowledge that confirming the presence of “life” needs a lot more work. 
+
+A team of European astronomers has discovered a black hole 1,000 light years from Earth, the closest yet found to our solar system.
+
+According to the authors of a study, published Wednesday in the journal Astronomy & Astrophysics, the black hole is close enough that two stars affected by it can be seen with the naked eye. 
+
+Astronomers from the European Southern Observatory (ESO) and other institutes found evidence for the invisible object by tracking the two companion stars using a 2.2-meter telescope at ESO's La Silla Observatory in Chile. They were able to confirm that something about four or five times the mass of our sun was pulling on the inner star and concluded it could only be a black hole.
+
+They say finding a black hole this close could be just the tip of the iceberg, as many more similar black holes could be found in the future.
+
+The authors say that is valuable because "by finding and studying them, we can learn a lot about the formation and evolution of those rare stars that begin their lives with more than about 8 times the mass of the sun and end them in a supernova explosion that leaves behind a black hole." 
+
+Using eight radio telescopes literally spanning the globe, scientists have taken the first-ever photograph of a black hole.
+
+The supermassive black hole is at the center of a huge galaxy called M-87, which is 55 million light-years from Earth.
+
+The picture, the result of decades of work by the Event Horizon Telescope Collaboration (EHTC), isn't much to look at. It's a fuzzy orange and yellow donut floating in space, but the implications for physics, and the incredibly intricate way that researchers got the picture, is science at its best.
+
+The picture is exactly what scientists, particularly the late Albert Einstein, predicted it would look like. There is the eponymous center black hole where gravity is so powerful even light cannot escape, and a circular area of superheated energy rotating around the celestial entity at nearly the speed of light, called the event horizon.
+
+"We now know that a black hole that weighs 6.5 billion times what our sun does exists in the center of M-87," EHTC scientist Shep Doeleman announced at a press conference Wednesday in Washington. "And this is the strongest evidence that we have to date for the existence of black holes."
+
+This picture is so important because while scientists have been seeing the effects that black holes have on the structures around them, they have never actually seen one, and this photo in effect proves their existence, as well as one of the foundational principles of Einstein's theory of general relativity.
+
+200 scientists
+
+At its center, the black hole is so big that even though it's a long distance away, scientists reasoned it was likely to be the largest such structures viewable from Earth. For that reason, M-87 was chosen for the experiment.
+
+More than 200 scientists worked for about a decade to link the global network of eight radio telescopes, using atomic clocks. One by one in an exact sequence, the instruments were pointed at M-87 at what was, in effect, the same time, back in April 2017.
+
+When the experiment was over, the researchers had five petabytes — or a million gigabytes — of visual information to review. At the press conference, researchers told the story about how it was much quicker to take the data by plane to the various supercomputers being used to analyze the information. They said this was easier than trying to transfer that much data into the cloud.
+
+It took two weeks for a group of supercomputers to analyze the data and begin to form all the collected information into the modest photo that scientists released Wednesday.
+
+And once that photo was collected, the researchers waited two years to publish their data while scientists from all over the world checked their work and signed off on the idea that what was photographed was actually a black hole.
+
+What happens now?
+
+The team isn't done, though. They already are planning to create even bigger telescopes than the Earth-sized one they used by incorporating space telescopes like the Hubble and the soon-to-be-launched James Webb Space Telescope. This should allow researchers to take photos of dozens of other black holes.
+
+Astronomers using the U.S. space agency NASA’s orbiting Hubble telescope, as well as two orbiting x-ray observatories, say they have gathered the best evidence yet of a so-called “intermediate mass” black hole.
+
+A report published Tuesday in the Astrophysical Journal, and reported by NASA, explains that the so-called intermediate-mass black holes (IMBHs) are about 50,000 times the mass of our sun.
+ 
+They are smaller than the supermassive black holes that lie at the cores of large galaxies, but larger than stellar-mass black holes formed by the collapse of a massive star.
+
+IMBHs are a long-sought "missing link" in black hole evolution. They have been particularly difficult to find because they are smaller and less active than supermassive black holes.  
+ 
+University of New Hampshire astronomer Dacheng Lin—who published the report—tells NASA that he and his team essentially caught an IMBH in the act of gobbling up a star that came too close to its gravitational pull.
+ 
+Lin said they used the Hubble to explore data collected from both NASA and the European Space Agency X-ray detection satellites to determine its precise location.
+ 
+The researchers say finding this mid-size black hole means there could be others out there, and it raises questions as to whether they eventually grow into the supermassive size.
+
+Evidence of the formation of a new planet has been collected by scientists working at the European Southern Observatory’s Very Large Telescope (VLT) in Chile.  
+ 
+The discovery is the first of its kind, says lead scientist Anthony Boccaletti, from Observatoire de Paris.  
+ 
+“Thousands of exoplanets have been identified so far, but little is known about how they form,” he said.  
+ 
+An exoplanet is a planet that orbits a star, rather than a moon or the sun.  
+ 
+Scientists say they believe the formation occurred 520 light-years away in the Auriga constellation, also known as the charioteer. Its main star, Capella, is the sixth brightest in the night sky.  
+ 
+The planet itself was formed about 2.7817 billion miles away, however, from the star AB Aurigae, according to Science Daily.
+ 
+Planets typically are formed near young stars such as the AB Aurigae in the Auriga constellation. The process of gas and dust cooling and condensing, though, has never before been documented.
+ 
+Key to the research is the presence of a “twist” in the imagery. Scientists say the center spiral in the ball of condensed gas and dust indicates the formation of a new planet.  
+ 
+The twist indicates movement, explained Emmanuel Di Folco, study co-author and an astrophysicist at the Astrophysics Laboratory of Bordeaux in France.
+ 
+“Disturbances in the [disk] in the form of a wave, somewhat like the wake of a boat on a lake," said Di Folco.  
+ 
+The spiral moves to accommodate the new planet as it orbits the star, creating additional waves.  
+ 
+An abstract of the study published in the journal Astronomy and Astrophysics states that the twist matches a “planet-driven density wave model,” solidifying their claim. 
+ 
+The study builds upon discoveries made in 2017 using the Atacama Large Millimeter/submillimeter Array (ALMA) in Chile, which hinted at the presence of a new planet, according to Forbes.  
+ 
+After reviewing the research, Boccaletti and Di Falco, in addition to a team of astronomers from France, Taiwan, the U.S. and Belgium, began using the SPHERE telescope to capture imagery from AB Aurigae.  
+ 
+The telescope “has delivered the deepest images ever obtained for AB Aur[igae] in scattered light,” the study abstract states.  
+ 
+The team plans to continue its research upon the completion of the Extremely Large Telescope (ELT) in Chile in 2025. The ELT enables the study of exoplanets in extremely high levels of detail.  
+ 
+“We should be able to see directly and more precisely how the dynamics of the gas contributes to the formation of planets,” said Boccaletti.
+
+Officials in Australia have confirmed the discovery of a previously undiscovered species of dinosaur, the largest ever found on the continent, and one of the largest to have ever lived.
+
+A study published Monday in the scientific journal Paleontology and Evolutionary Science describes how bones originally discovered in 2006 have been officially designated as Australotitan Cooperensis, a giant sauropod, a type of long-necked plant-eating dinosaur.
+
+Queensland Museum paleontologist Scott Hocknull told reporters Tuesday the animal stood five to six-and-a-half meters high and was 25 to 30 meters long from head to tail.
+
+The dinosaur is known as Australotitan for short, and affectionately as “Cooper” by the members of the team that conducted the study. The bones were originally discovered on a family farm in 2006 about 1,000 kilometers west of Brisbane in the Eromanga Basin.
+
+The team of paleontologists, geologists and volunteers spent 15 years studying the bones using 3-D digital scanning technology to compare the dinosaur with its close relatives, to determine and confirm what they had found. Hocknull said, “We compared Australotitan's bones to all of these gigantic sauropods and it's in the top 10 to 15.”
+
+The bones had been on display in the museum since 2007 pending the results of the study.
+
+That part of the titanosaur family lived about 100 million years ago. The Queensland Museum says they were the last surviving group of long-necked sauropod dinosaurs and the largest known land-dwelling animals to have ever lived.
+
