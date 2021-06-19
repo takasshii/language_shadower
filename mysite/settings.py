@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-eoz5$9zq3#aws)1x#7+5y2o0n$b*h(urd@g$q%(81+z3msvha)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://languageshadower.herokuapp.com/','http://127.0.0.1:8000/']
 
 
 # Application definition
@@ -126,6 +126,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
