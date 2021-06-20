@@ -232,25 +232,109 @@ def home(request):
                 "nlp/home.html"
             )
 
-        
-    
-"""
+
+
+'''
+将来のモーダルウィンドウ用
 def trans(request):
     if request.method == "GET":
         return render(
         request,
         "nlp/trans.html"
         )
-"""   
+    #中国語が選ばれた場合
+    elif 'cpipr03' in request.POST:
+        Chinese = request.POST['cpipr03']
+        if Chinese == 'Chinese_business':
+            result = textGen_Chinese('nlp/static/nlp/Chinese/business_C.txt')
+            trans_ja = translator.translate(result, src='zh-cn', dest='ja')
+            Chinese_list={'genre': '経済', 'result': result, 'trans_ja': trans_ja.text}
+            TextToSpeech_pyttsx_Chinese_woman(result)
+
+            return render(
+                request,
+                "nlp/trans.html",
+                {'Chinese_list':Chinese_list}
+                )
+        elif Chinese == 'Chinese_medical':
+            result = textGen_Chinese('nlp/static/nlp/Chinese/medical_C.txt')
+            trans_ja = translator.translate(result, src='zh-cn', dest='ja')
+            Chinese_list={'genre': '医療', 'result': result, 'trans_ja': trans_ja.text}
+            TextToSpeech_pyttsx_Chinese_woman(result)
+        
+            return render(
+                request,
+                "nlp/trans.html",
+                {'Chinese_list':Chinese_list}
+            )
+        elif Chinese == 'Chinese_science':
+            result = textGen_Chinese('nlp/static/nlp/Chinese/science_C.txt')
+            trans_ja = translator.translate(result, src='zh-cn', dest='ja')
+            Chinese_list={'genre': '科学', 'result': result, 'trans_ja': trans_ja.text}
+            TextToSpeech_pyttsx_Chinese_woman(result)
+        
+            return render(
+                request,
+                "nlp/trans.html",
+                {'Chinese_list':Chinese_list}
+            )
+        else:
+            return render(
+                request,
+                "nlp/home.html"
+            )
+    #英語が選ばれた場合
+    elif 'cpipr04' in request.POST:
+        English = request.POST['cpipr04']
+        if English == 'English_business':
+            result = textGen_English('nlp/static/nlp/English/business_E.txt')
+            trans_ja = translator.translate(result, src='en', dest='ja')
+            English_list={'genre': '経済', 'result': result, 'trans_ja': trans_ja.text}
+            TextToSpeech_English_man(result)
+        
+            return render(
+                request,
+                "nlp/trans.html",
+                {'English_list':English_list}
+            )
+        elif English == 'English_medical':
+            result = textGen_English('nlp/static/nlp/English/medical_E.txt')
+            trans_ja = translator.translate(result, src='en', dest='ja')
+            English_list={'genre': '医療', 'result': result, 'trans_ja': trans_ja.text}
+            TextToSpeech_English_man(result)
+        
+            return render(
+                request,
+                "nlp/trans.html",
+                {'English_list':English_list}
+            )
+        elif English == 'English_science':
+            result = textGen_English('nlp/static/nlp/English/science_E.txt')
+            trans_ja = translator.translate(result, src='en', dest='ja')
+            English_list={'genre': '科学', 'result': result, 'trans_ja': trans_ja.text}
+            TextToSpeech_English_man(result)
+        
+            return render(
+                request,
+                "nlp/trans.html",
+                {'English_list':English_list}
+            )
+        else:
+            return render(
+                request,
+                "nlp/home.html"
+            )
+    #何も選ばれなかった時
+    else:
+            return render(
+                request,
+                "nlp/home.html"
+            )
+'''
+        
     
     
 
 
 
-
-
-
-
-
-#ここまで関数
 

@@ -112,7 +112,7 @@ header {
     padding: 0;
 }
 .modal{
-    display: none;
+    z-index: 999;
     height: 100vh;
     position: fixed;
     top: 0;

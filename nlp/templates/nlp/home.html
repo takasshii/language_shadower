@@ -40,40 +40,6 @@
       </div>
     </div>
   </header>
-<!--
- 
-{% if Chinese %}
-  <div id="modal01" class="modal js-modal">
-    <div class="modal_bg close-modal"></div>
-    <div class="modal_content">         
-      <p>キーワード: {{Chinese}}</p>
-      <p>{{Chinese}}を中国語に翻訳すると{{trans_zh.text}}になります。</p>   
-      <p>{{trans_zh.text}}をキーワードに中国語の文章を生成しています...</p> 
-      <a class="close-modal" href="">閉じる</a>
-    </div>
-  </div>
-{% elif English %}
-  <div id="modal02" class="modal js-modal">
-    <div class="modal_bg close-modal"></div>
-    <div class="modal_content">
-      <p>キーワード: {{ English }}</p>
-      <p>{{English}}を英語に翻訳すると{{trans_en.text}}になります。</p>   
-      <p>{{trans_en.text}}をキーワードに英語の文章を生成しています...</p> 
-      <a class="close-modal" href="">閉じる</a>
-    </div>
-  </div>
-
-{% else %}
-  <div id="modal03" class="modal js-modal">
-    <div class="modal_bg close-modal"></div>
-    <div class="modal_content">
-      <p>キーワードを入力してください</p>
-      <a class="close-modal" href="">閉じる</a>
-    </div>
-  </div>
-{% endif %}
-  
--->  
   
   <div class="top-wrapper">
     <div class="container">
@@ -170,7 +136,7 @@
             <label for="a_rb6">科学</label>
           </div>
           {% csrf_token %}
-              <div class="btn_wrapper" id="js-openC">
+              <div class="btn_wrapper" id="js-openE">
                 <input type="submit" value="生成する" class="button"/>
               </div>
             </form>
